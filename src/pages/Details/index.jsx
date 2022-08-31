@@ -1,9 +1,13 @@
+import { Button } from '../components/Button'
+import { Header } from '../components/Header'
 import { Container } from './styles'
 
 export default function Details() {
   return (
     <Container>
-      <h1>Olá</h1>
+      <Header />
+
+      <Button title="Voltar " />
     </Container>
   )
 }

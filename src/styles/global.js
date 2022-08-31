@@ -14,8 +14,10 @@ export default createGlobalStyle`
 
   body {
     background-color: ${({ theme }) => theme.COLORS.BLACK_700};
-    color: ${({ theme }) => theme.COLORS.WHITE}
+    color: ${({ theme }) => theme.COLORS.WHITE};
 
+
+    -webkit-font-smoothing: antialiased;
   }
 
   body, input, button, textarea {
@@ -26,11 +28,11 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
-
   }
 
   button:hover, a:hover {
-    filter: brightness(0.9)
+    filter: brightness(0.9);
+    cursor: pointer;
   }
 
 
