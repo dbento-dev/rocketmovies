@@ -1,9 +1,9 @@
 import { Container } from './styled'
 
-export function ButtonText({ title, ...rest }) {
+export function ButtonText({ title, icon, ...rest }) {
   return (
     <Container type="button" {...rest}>
-      {title}
+      {icon} {title}
     </Container>
   )
 }

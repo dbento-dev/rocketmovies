@@ -6,6 +6,8 @@ import { Section } from '../../components/Section'
 // import { Tag } from '../../components/Tag'
 import { TextArea } from '../../components/TextArea'
 import { Container, Form } from './styles'
+import { ButtonText } from '../../components/ButtonText'
+import { FiArrowLeft } from 'react-icons/fi'
 
 export function NewMovie() {
   return (
@@ -15,7 +17,8 @@ export function NewMovie() {
       <main>
         <Form>
           <header>
-            <a href="/">Voltar</a>
+            <ButtonText title="Voltar" icon={<FiArrowLeft />} />
+
             <h1>Novo filme</h1>
           </header>
           <div style={{ display: 'flex', gap: '4rem' }}>
@@ -28,13 +31,12 @@ export function NewMovie() {
               <MovieItem value="React" />
               <MovieItem value="Node" />
               <MovieItem value="TypeScript" />
-              <MovieItem value="HTML" />
 
               <MovieItem placeholder="Novo marcador" isNew />
             </div>
           </Section>
           <div style={{ display: 'flex', gap: '16px' }}>
-            <Button title="Cancelar" />
+            <Button title="Cancelar" isCancelBtn />
             <Button title="Salvar" />
           </div>
         </Form>

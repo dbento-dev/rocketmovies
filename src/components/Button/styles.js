@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.button`
-  background-color: ${({ theme }) => theme.COLORS.PINK};
-  color: ${({ theme }) => theme.COLORS.GRAY_600};
+  background-color: ${({ theme, isCancelBtn }) =>
+    isCancelBtn ? theme.COLORS.BLACK_900 : theme.COLORS.PINK};
+  color: ${({ theme, isCancelBtn }) =>
+    isCancelBtn ? theme.COLORS.PINK : theme.COLORS.GRAY_600};
   font-weight: 500;
   width: 100%;
   height: 5.6rem;
