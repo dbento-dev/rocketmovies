@@ -26,7 +26,7 @@ export function MovieDescription({ rating, ...rest }) {
         através de radiação gravitacional, deixando coordenadas em biná.
       </StParagraph>
 
-      <div style={{ display: 'flex', gap: '0.8rem' }}>
+      <div style={{ display: 'flex', gap: '0.8rem', marginTop: '3.2rem' }}>
         <Tag title="Ficção Científica" />
         <Tag title="Drama" />
         <Tag title="Família" />

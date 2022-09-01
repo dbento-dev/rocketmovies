@@ -27,4 +27,5 @@ export const StParagraph = styled.p`
   letter-spacing: 0em;
   text-align: left;
   margin: 1.5rem 0;
+  text-align: justify;
 `
