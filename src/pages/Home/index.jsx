@@ -30,7 +30,7 @@ export default function Home() {
                 width: '207px',
               }}
             >
-              <Button title="Adicionar Filme" />
+              <Button title="Adicionar Filme" icon={<FiPlus />} />
             </div>
           </div>
           <StContainerMovies>

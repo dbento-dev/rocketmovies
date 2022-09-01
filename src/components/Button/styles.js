@@ -10,6 +10,13 @@ export const Container = styled.button`
   padding: 0 1.6rem;
   border: 0;
   border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    margin-right: 8px;
+  }
 
   &:disabled {
     opacity: 0.5;
