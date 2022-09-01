@@ -11,6 +11,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 2.4rem 12.3rem;
+  align-items: center;
 `
 export const Profile = styled.div`
   display: flex;
@@ -39,4 +40,23 @@ export const Profile = styled.div`
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
   }
+`
+
+export const StTitle = styled.p`
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: ${({ theme }) => theme.COLORS.PINK};
+`
+
+export const StInput = styled.input`
+  height: 5.6rem;
+  width: 63rem;
+  border-radius: 1rem;
+  padding: 1.9rem 2.4rem;
+  background-color: ${({ theme }) => theme.COLORS.GRAY_900};
+  border: none;
+  color: ${({ theme }) => theme.COLORS.GRAY_400};
 `

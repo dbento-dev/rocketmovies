@@ -1,8 +1,11 @@
-import { Container, Profile } from './styles'
+import { Container, Profile, StInput, StTitle } from './styles'
 
 export function Header() {
   return (
     <Container>
+      <StTitle>RocketMovies</StTitle>
+      <StInput type="text" placeholder="Pesquisar pelo título" />
+
       <Profile>
         <div>
           <strong>David Bento</strong>
