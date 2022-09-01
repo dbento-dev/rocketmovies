@@ -1,19 +1,17 @@
 import styled from 'styled-components'
 
 export const Container = styled.span`
-  height: 5.6rem;
   font-size: 1.6rem;
-  padding: 0.5rem 1.4rem;
 
   border-radius: 0.5rem;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_900};
-  color: ${({ theme }) => theme.COLORS.WHITE};
+  background-color: ${({ theme }) => theme.COLORS.GRAY_600};
+  color: ${({ theme }) => theme.COLORS.GRAY_200};
   display: flex;
   justify-content: center;
   align-items: center;
 
   font-weight: 400;
-  line-height: 1.9rem;
-  letter-spacing: 0em;
-  text-align: left;
+  border-radius: 8px;
+  padding: 5px 16px;
+  font-family: 'Roboto', sans-serif;
 `

@@ -3,10 +3,11 @@ import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
 import { Tag } from '../../components/Tag'
-import { Container, Content } from './styles'
+import { Container, Content, StContainerMovies } from './styles'
 import { StHeading2 } from '../../components/commons/styles'
 
 import { FiPlus } from 'react-icons/fi'
+import { MovieDescription } from '../../components/MovieDescription'
 
 export default function Details() {
   return (
@@ -29,9 +30,15 @@ export default function Details() {
                 width: '207px',
               }}
             >
-              <Button title="Voltar " />
+              <Button title="Adicionar Filme" />
             </div>
           </div>
+          <StContainerMovies>
+            <MovieDescription rating={5}></MovieDescription>
+            <MovieDescription rating={5}></MovieDescription>
+            <MovieDescription rating={5}></MovieDescription>
+            {/* <MovieDescription rating={5}></MovieDescription> */}
+          </StContainerMovies>
         </Content>
         {/* <ButtonText title="Voltar" /> */}
         {/* <Section title="Marcadores">
