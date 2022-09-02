@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   /* height: 22rem; */
@@ -10,13 +11,15 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.GRAY_700};
 `
 
-export const StTitle = styled.p`
+export const StTitle = styled(Link)`
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 3.2rem;
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 0.8rem;
+  color: ${({ theme }) => theme.COLORS.WHITE};
+  margin-right: 8px;
 `
 
 export const StParagraph = styled.p`

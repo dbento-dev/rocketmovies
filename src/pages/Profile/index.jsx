@@ -3,12 +3,15 @@ import { Button } from '../../components/Button'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { Avatar, Container, Form } from './styles'
+import { Link } from 'react-router-dom'
 
 export function Profile() {
   return (
     <Container>
       <header>
-        <ButtonText icon={<FiArrowLeft />} title="Voltar" />
+        <Link to="/">
+          <FiArrowLeft /> Voltar
+        </Link>
       </header>
 
       <Form>

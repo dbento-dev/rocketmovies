@@ -6,7 +6,7 @@ export function Header() {
       <StTitle>RocketMovies</StTitle>
       <StInput type="text" placeholder="Pesquisar pelo título" />
 
-      <Profile>
+      <Profile to="/profile">
         <div>
           <strong>David Bento</strong>
           <span>Sair</span>

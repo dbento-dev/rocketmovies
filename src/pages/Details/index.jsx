@@ -3,6 +3,7 @@ import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
 import { FiArrowLeft, FiClock, FiStar } from 'react-icons/fi'
 import { Tag } from '../../components/Tag'
+import { Link } from 'react-router-dom'
 
 export function Details() {
   return (
@@ -11,7 +12,9 @@ export function Details() {
 
       <main>
         <Content>
-          <ButtonText title="Voltar" icon={<FiArrowLeft />} />
+          <Link to="/">
+            <FiArrowLeft /> Voltar
+          </Link>
 
           <header>
             <span>

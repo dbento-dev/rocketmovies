@@ -8,6 +8,7 @@ import { TextArea } from '../../components/TextArea'
 import { Container, Form } from './styles'
 import { ButtonText } from '../../components/ButtonText'
 import { FiArrowLeft } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 export function NewMovie() {
   return (
@@ -17,7 +18,9 @@ export function NewMovie() {
       <main>
         <Form>
           <header>
-            <ButtonText title="Voltar" icon={<FiArrowLeft />} />
+            <Link to="/">
+              <FiArrowLeft /> Voltar
+            </Link>
 
             <h1>Novo filme</h1>
           </header>

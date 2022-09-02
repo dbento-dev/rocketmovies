@@ -5,7 +5,7 @@ import { Container, StTitle, StParagraph } from './styles'
 export function MovieDescription({ rating, ...rest }) {
   return (
     <Container>
-      <StTitle>Interstellar</StTitle>
+      <StTitle to="/details/id:1">Interstellar</StTitle>
 
       {Array.from({ length: rating }).map((_, index) => (
         <FiStar

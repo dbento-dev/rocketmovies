@@ -41,6 +41,21 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   max-height: 750px;
+
+  > a {
+    margin: 2.4rem 0 1.8rem;
+    display: flex;
+    color: ${({ theme }) => theme.COLORS.PINK};
+    background: none;
+    font-size: 1.6rem;
+    align-items: center;
+    border: none;
+    > svg {
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+    }
+  }
 `
 
 export const StTitle = styled.h1`

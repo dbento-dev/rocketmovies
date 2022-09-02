@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   width: 100%;
@@ -42,24 +43,28 @@ export const StContainerMovies = styled.div`
   margin-top: 32px;
   display: grid;
   gap: 24px;
+`
 
-  /* Works on Firefox */
+export const StNewMovieButton = styled(Link)`
+  background-color: ${({ theme, isCancelBtn }) =>
+    isCancelBtn ? theme.COLORS.BLACK_900 : theme.COLORS.PINK};
+  color: ${({ theme, isCancelBtn }) =>
+    isCancelBtn ? theme.COLORS.PINK : theme.COLORS.GRAY_600};
+  font-weight: 500;
+  width: 100%;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  border: 0;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  scrollbar-width: thin;
-  scrollbar-color: blue orange;
-
-  /* Works on Chrome, Edge, and Safari */
-  -webkit-scrollbar {
-    width: 12px;
+  svg {
+    margin-right: 8px;
   }
 
-  -webkit-scrollbar-track {
-    background: orange;
-  }
-
-  -webkit-scrollbar-thumb {
-    background-color: blue;
-    border-radius: 20px;
-    border: 3px solid orange;
+  &:disabled {
+    opacity: 0.5;
   }
 `

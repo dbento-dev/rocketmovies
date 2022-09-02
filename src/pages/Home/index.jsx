@@ -3,7 +3,12 @@ import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
 import { Tag } from '../../components/Tag'
-import { Container, Content, StContainerMovies } from './styles'
+import {
+  Container,
+  Content,
+  StContainerMovies,
+  StNewMovieButton,
+} from './styles'
 import { StHeading2 } from '../../components/commons/styles'
 
 import { FiPlus } from 'react-icons/fi'
@@ -30,21 +35,17 @@ export function Home() {
                 width: '207px',
               }}
             >
-              <Button title="Adicionar Filme" icon={<FiPlus />} />
+              <StNewMovieButton to="/new-movie">
+                <FiPlus /> Adicionar filme
+              </StNewMovieButton>
             </div>
           </div>
           <StContainerMovies>
             <MovieDescription rating={5}></MovieDescription>
             <MovieDescription rating={5}></MovieDescription>
             <MovieDescription rating={5}></MovieDescription>
-            {/* <MovieDescription rating={5}></MovieDescription> */}
           </StContainerMovies>
         </Content>
-        {/* <ButtonText title="Voltar" /> */}
-        {/* <Section title="Marcadores">
-        <Tag title="React" />
-        <Tag title="TypeScript" />
-      </Section> */}
       </main>
     </Container>
   )
