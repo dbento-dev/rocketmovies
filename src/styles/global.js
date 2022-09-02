@@ -10,7 +10,21 @@ export default createGlobalStyle`
   :root {
   font-size: 62.5%;
   }
+  
+  
 
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;;
+    background-color: transparent;    
+  } 
+
+  *::-webkit-scrollbar-thumb {
+    height: 8px; 
+    width: 8px;
+    background: ${({ theme }) => theme.COLORS.PINK};;
+    border-radius: 8px;
+  }
 
   body {
     background-color: ${({ theme }) => theme.COLORS.BLACK_700};
@@ -34,5 +48,7 @@ export default createGlobalStyle`
     filter: brightness(0.9);
     cursor: pointer;
   }
+
+
 
 `
