@@ -9,7 +9,7 @@ import { StHeading2 } from '../../components/commons/styles'
 import { FiPlus } from 'react-icons/fi'
 import { MovieDescription } from '../../components/MovieDescription'
 
-export default function Home() {
+export function Home() {
   return (
     <Container>
       <Header />
