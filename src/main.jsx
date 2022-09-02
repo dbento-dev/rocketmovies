@@ -6,6 +6,7 @@ import theme from './styles/theme'
 import Home from './pages/Home'
 import { NewMovie } from './pages/NewMovie'
 import { Details } from './pages/Details'
+import { SignIn } from './pages/SignIn'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,7 +14,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <GlobalStyles />
       {/* <Home /> */}
       {/* <NewMovie /> */}
-      <Details />
+      {/* <Details /> */}
+      <SignIn />
     </ThemeProvider>
   </React.StrictMode>
 )
