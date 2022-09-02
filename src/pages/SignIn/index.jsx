@@ -3,6 +3,7 @@ import { Button } from '../../components/Button'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { BackgroundSign, Container, Form } from './styles'
+import { Link } from 'react-router-dom'
 
 export function SignIn() {
   return (
@@ -17,7 +18,7 @@ export function SignIn() {
         <Input type="password" placeholder="Senha" icon={FiLock} />
 
         <Button title="Entrar" />
-        <ButtonText title="Criar conta" />
+        <Link to="/register">Criar conta</Link>
       </Form>
       <BackgroundSign />
     </Container>

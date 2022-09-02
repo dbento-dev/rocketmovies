@@ -45,6 +45,21 @@ export const Form = styled.form`
   > button {
     margin: 2.4rem 0 1.8rem;
   }
+
+  > a {
+    margin: 2.4rem 0 1.8rem;
+    display: flex;
+    color: ${({ theme }) => theme.COLORS.PINK};
+    background: none;
+    font-size: 1.6rem;
+    align-items: center;
+    border: none;
+    > svg {
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+    }
+  }
 `
 
 export const BackgroundSign = styled.div`

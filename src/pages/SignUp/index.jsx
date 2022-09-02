@@ -3,6 +3,7 @@ import { Button } from '../../components/Button'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { BackgroundSign, Container, Form } from './styles'
+import { Link } from 'react-router-dom'
 
 export function SignUp() {
   return (
@@ -18,7 +19,9 @@ export function SignUp() {
         <Input type="password" placeholder="Senha" icon={FiLock} />
 
         <Button title="Cadastrar" />
-        <ButtonText title="Voltar ao login" icon={<FiArrowLeft />} />
+        <Link to="/">
+          <FiArrowLeft /> Voltar ao login
+        </Link>
       </Form>
       <BackgroundSign />
     </Container>
