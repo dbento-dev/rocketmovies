@@ -9,5 +9,7 @@ export const Container = styled.button`
   align-items: center;
   > svg {
     margin-right: 8px;
+    width: 18px;
+    height: 18px;
   }
 `
